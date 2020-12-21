@@ -1,5 +1,5 @@
 #include <emscripten/emscripten.h>
-#include<string>
+#include <string>
 
 #include "LinkedList.cpp"
 
@@ -11,11 +11,11 @@ extern "C"
     int EMSCRIPTEN_KEEPALIVE main();
 }
 
-int say_hey() {
+int say_hey()
+{
     ll.insert("Foo");
     return ll.get_size();
 }
-
 
 int main(void)
 {
