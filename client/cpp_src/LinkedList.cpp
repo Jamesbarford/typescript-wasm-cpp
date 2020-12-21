@@ -1,7 +1,3 @@
-#include <string>
-#include <iostream>
-#include <set>
-
 template <class T>
 struct LinkedListNode
 {
@@ -135,11 +131,6 @@ public:
         }
     }
 
-    void print()
-    {
-        this->for_each(LinkedList::log_str);
-    }
-
     int get_size()
     {
         return this->_size;
@@ -229,8 +220,4 @@ public:
 
 private:
     int _size = 0;
-    static void log_str(LinkedListNode<T> *argv)
-    {
-        std::cout << argv->data << std::endl;
-    }
 };

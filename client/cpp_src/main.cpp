@@ -1,4 +1,6 @@
 #include <emscripten/emscripten.h>
+#include<string>
+
 #include "LinkedList.cpp"
 
 LinkedList<std::string> ll;
